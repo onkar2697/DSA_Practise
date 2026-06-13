@@ -1,14 +1,13 @@
 package org.example;
 
-import java.util.Scanner;
+import java.util.*;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        int cnt = 0;
+        Scanner sc1 = new Scanner(System.in);
+        int n = sc1.nextInt();
 
         FactCount cf = new FactCount();
         cf.countOfFact(n);
@@ -25,13 +24,69 @@ public class Main {
         SquareInRange si = new SquareInRange();
         si.PerfectSquare(n);
 
-        StarPattern st = new StarPattern();
+          StarPattern st = new StarPattern();
         st.starLeftIncrease(4);
         st.starReverseLeftIncrease(4);
         st.starsAtRightSide(4);
         st.reverseStarsAtRightSide(4);
+        st.numericStairs(4);
 
 
+        InverseArray in = new InverseArray();
+        int[] result = in.inverseOfArray(new int[]{1, 3, 0, 2});
+        System.out.println(Arrays.toString(result));
+
+        SearchNumber sc =  new SearchNumber();
+        boolean ans = sc.searchInArray(new int[]{25,65,47,36,4,14,25,},14);
+        boolean ans1 = sc.searchInArray2D(new int[][]{{1,2,3},{25,36,45},{45,26,95}},26);
+        System.out.println(ans);
+        System.out.println(ans1);
+
+        HashSetAndMap hash = new HashSetAndMap();
+        HashMap<Integer,Integer> hm = hash.arrayToHashMap(new int[]{5,65,47,36,4,14,25});
+        HashSet<Integer> hs = hash.arrayToHashSet(new int[]{5,65,47,36,4});
+        System.out.println(hm);
+        System.out.println(hs);
+
+        HashSet<Integer> set1 = new HashSet<>();
+        set1.add(1);
+        set1.add(2);
+        set1.add(3);
+        set1.add(4);
+        HashSet<Integer> set2 = new HashSet<>();
+        set2.add(3);
+        set2.add(4);
+        set2.add(5);
+        set2.add(6);
+
+        ArrayList<Integer> res = hash.countSameNumberInSet(set1, set2);
+        System.out.println("the common are "+ res);
+
+        AllString as = new AllString();
+        String s = "abcdefg";
+        String s1 = "AplPlpA";
+        as.reverse(s);
+        boolean b = as.isPalindrome(s1);
+        System.out.println(b);
+        int cnt = as.countUppercase(s1);
+        System.out.println(cnt);
+
+        SubArrays sb1 = new SubArrays();
+        int ans2 = sb1.sumOfAllSubArray(new int[]{15,25,35,14});
+        int ans6 = sb1.sumOfAllSubArray2(new int[]{15,25,35,14});
+        int ans7 = sb1.sumOfAllSubArray3(new int[]{15,25,35,14});
+        System.out.println(ans6);
+        System.out.println(ans7);
+        System.out.println(ans2);
+        sb1.generateSubArrays(new int[]{15,25,35,14,44,26});
+        sb1.lengthOfSubArray(new int[]{15,25,35,14,44,26},93);
+
+        ArraysProblems ap = new ArraysProblems();
+        ap.kthSmallest(new int[]{15,25,35,14,44,26},2);
+        int[] prefixsum= ap.prefixSum(new int[]{15,25,35,14,44,26});
+        for(int num :  prefixsum){
+            System.out.print(num + " ");
+        }
 
     }
 }
