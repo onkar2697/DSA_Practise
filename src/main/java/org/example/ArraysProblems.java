@@ -21,4 +21,31 @@ public class ArraysProblems {
         System.out.println("Smallest no is: " + arr[k - 1]);
         System.out.println("Largest no is: " + arr[arr.length - k]);
     }
+    public Boolean searchInArray(int[] array, int n) {
+        for(int i = 0; i < array.length; i++){
+            if(array[i] == n){
+                return true;
+            }
+        }
+        return false;
+    }
+
+
+    public boolean searchInArray2D(int[][] array, int n){
+        for(int i = 0; i < array.length; i++){
+            for(int j = 0; j < array[0].length; j++){
+                if(array[i][j] == n){
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+    public int[] inverseOfArray(int[] arr){
+        int[] ans = new int[arr.length];
+        for(int i=0;i<arr.length;i++){
+            ans[arr[i]] = i;
+        }
+        return ans;
+    }
 }
