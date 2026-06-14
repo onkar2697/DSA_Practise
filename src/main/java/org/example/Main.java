@@ -8,6 +8,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc1 = new Scanner(System.in);
         int n = sc1.nextInt();
+        int cnt1 = 0;
 
         FactCount cf = new FactCount();
         cf.countOfFact(n);
@@ -71,22 +72,9 @@ public class Main {
         int cnt = as.countUppercase(s1);
         System.out.println(cnt);
 
-        SubArrays sb1 = new SubArrays();
-        int ans2 = sb1.sumOfAllSubArray(new int[]{15,25,35,14});
-        int ans6 = sb1.sumOfAllSubArray2(new int[]{15,25,35,14});
-        int ans7 = sb1.sumOfAllSubArray3(new int[]{15,25,35,14});
-        System.out.println(ans6);
-        System.out.println(ans7);
-        System.out.println(ans2);
-        sb1.generateSubArrays(new int[]{15,25,35,14,44,26});
-        sb1.lengthOfSubArray(new int[]{15,25,35,14,44,26},93);
 
-        ArraysProblems ap = new ArraysProblems();
-        ap.kthSmallest(new int[]{15,25,35,14,44,26},2);
-        int[] prefixsum= ap.prefixSum(new int[]{15,25,35,14,44,26});
-        for(int num :  prefixsum){
-            System.out.print(num + " ");
-        }
+
+
 
     }
 }
