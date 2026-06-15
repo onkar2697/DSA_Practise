@@ -5,6 +5,9 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Scanner;
 
+import static org.example.Recursion.febonaci;
+import static org.example.Recursion.primeNumber;
+
 
 public class Main {
     public static void main(String[] args) {
@@ -86,6 +89,19 @@ public class Main {
                 hm.countSameNumberInSet(set1, set2);
 
         System.out.println("Common elements: " + common);
+
+
+        if(primeNumber(11)){
+            System.out.println("Prime number");
+        }
+        else{
+            System.out.println("Not Prime number");
+        }
+        int n1 =10;
+        System.out.println("Febonacci series : ");
+        for(int i=0;i<n1;i++){
+            System.out.print(febonaci(i)+" ");
+        }
 
     }
 }
