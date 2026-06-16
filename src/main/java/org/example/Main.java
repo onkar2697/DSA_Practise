@@ -50,6 +50,8 @@ public class Main {
             System.out.print(num);
         }
 
+        ap.reverseArray(new int[]{15,25,14,32,47});
+
         boolean isinarray = ap.searchInArray(new int[]{15,25,14,32,47},47);
         boolean isinarray1= ap.searchInArray2D(new int[][]{{15,25,35},{65,55,45},{95,85,75}},75);
         System.out.println(isinarray);
