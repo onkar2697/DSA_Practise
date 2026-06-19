@@ -105,5 +105,18 @@ public class Main {
             System.out.print(febonaci(i)+" ");
         }
 
+        Matrix matrix = new Matrix();
+        int[][] mat = matrix.transposeOfMatrix(new int[][]{
+                {15,16,17},
+                {24,25,26},
+                {35,36,37}
+        });
+        for (int i = 0; i < mat.length; i++) {
+            for (int j = 0; j < mat[0].length; j++) {
+                System.out.print(mat[i][j] + " ");
+            }
+            System.out.println();
+        }
+
     }
 }
