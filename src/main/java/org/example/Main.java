@@ -20,6 +20,10 @@ public class Main {
         number.digitSum(12536);
         number.isPrime(11);
         number.PerfectSquare(n);
+        int allevenNumbers = number.allEven(245);
+        System.out.println("Number of even numbers: "+allevenNumbers);
+        int oddsum = number.oddSum(27);
+        System.out.println("sum of odd numbers: "+oddsum);
 
         //Star pattern
         StarPattern st = new StarPattern();
@@ -68,6 +72,7 @@ public class Main {
        int countupper = al.countUppercase("AbcDeFglsE");
        System.out.println(countupper);
        System.out.println(al.isPalindrome("AlePelA"));
+       System.out.println(al.countSpecialCases("ab_hy%ggh$h"));
 
        //Hshmap
         HashSetAndMap hm = new HashSetAndMap();
