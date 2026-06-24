@@ -65,6 +65,12 @@ public class Main {
        for(int num:prefixsum){
            System.out.print(num+" ");
        }
+        System.out.println("Roate Array:");
+       int[] rotate = ap.rotate(new int[]{12,20,14,16,13,15},3);
+       for(int i:rotate){
+           System.out.print(i+" ");
+       }
+
 
        //String problems
        AllString al = new AllString();
@@ -73,6 +79,8 @@ public class Main {
        System.out.println(countupper);
        System.out.println(al.isPalindrome("AlePelA"));
        System.out.println(al.countSpecialCases("ab_hy%ggh$h"));
+       int countag = al.countAGpairs("agjikhjhgagmkjagnga");
+       System.out.println("count of ag pair as : " +countag);
 
        //Hshmap
         HashSetAndMap hm = new HashSetAndMap();
