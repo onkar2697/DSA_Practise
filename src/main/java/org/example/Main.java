@@ -70,6 +70,11 @@ public class Main {
        for(int i:rotate){
            System.out.print(i+" ");
        }
+       System.out.println("AddValue to  Array:");
+       int[] addVal = ap.addValInArray(new int[]{0,0,0,0,0,0,0,0,0,0},2,2,6);
+       for(int i:addVal){
+           System.out.print(i+" ");
+       }
 
 
        //String problems

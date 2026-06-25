@@ -82,4 +82,14 @@ public class ArraysProblems {
             j--;
         }
     }
+
+    public int[] addValInArray(int[] arr, int val, int i, int j) {
+        if((i>j) || (i>arr.length) || (j>arr.length)){
+            System.out.println("Error invalid input");
+        }
+        for(int k=i-1;k<j-1;k++){
+            arr[k]=arr[k]+val;
+        }
+        return arr;
+    }
 }
