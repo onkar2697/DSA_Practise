@@ -136,5 +136,9 @@ public class Main {
             System.out.println();
         }
 
+        TappingOfRainWater t =  new TappingOfRainWater();
+        int tapwater = t.tapWater(new int[]{4,2,0,3,2,5});
+        System.out.println("rain water tapped is : " +tapwater);
+
     }
 }
