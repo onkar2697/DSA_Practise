@@ -1,9 +1,6 @@
 package org.example;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Scanner;
+import java.util.*;
 
 import static org.example.Recursion.febonaci;
 import static org.example.Recursion.primeNumber;
@@ -139,6 +136,13 @@ public class Main {
         TappingOfRainWater t =  new TappingOfRainWater();
         int tapwater = t.tapWater(new int[]{4,2,0,3,2,5});
         System.out.println("rain water tapped is : " +tapwater);
+
+        Sorting sort = new Sorting();
+        int[] sortedarray = sort.selectionSort(new int[]{15,25,10,12,9,30,18});
+        System.out.println("sorted array is :" + Arrays.toString(sortedarray));
+        for(int num:sortedarray){
+            System.out.print(num+" ");
+        }
 
     }
 }
