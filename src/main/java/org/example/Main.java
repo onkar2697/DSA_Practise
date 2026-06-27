@@ -138,11 +138,13 @@ public class Main {
         System.out.println("rain water tapped is : " +tapwater);
 
         Sorting sort = new Sorting();
-        int[] sortedarray = sort.selectionSort(new int[]{15,25,10,12,9,30,18});
-        System.out.println("sorted array is :" + Arrays.toString(sortedarray));
-        for(int num:sortedarray){
+        int[] sortedArray = sort.selectionSort(new int[]{15,25,10,12,9,30,18});
+        System.out.println("sorted array is :" + Arrays.toString(sortedArray));
+        for(int num:sortedArray){
             System.out.print(num+" ");
         }
+        int[] sortedArray1 = sort.bubbleSort(new int[]{15,25,10,12,9,30,18});
+        System.out.println("sortedArray is :" + Arrays.toString(sortedArray));
 
     }
 }
