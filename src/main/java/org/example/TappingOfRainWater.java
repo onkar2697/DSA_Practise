@@ -3,8 +3,8 @@ package org.example;
 public class TappingOfRainWater {
     public int tapWater(int[] height) {
         int n =  height.length;
-        int[] lmax = new int[n];
-        int[] rmax = new int[n];
+        int[] lmax = new int[n]; // from left time take all the max height
+        int[] rmax = new int[n];  // from right to left take all max height
 
         int max = Integer.MIN_VALUE;
         for(int i=0; i<n; i++){

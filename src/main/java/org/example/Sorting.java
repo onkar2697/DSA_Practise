@@ -7,6 +7,7 @@ public class Sorting {
         for(int i=0;i<n;i++){
             int minIndex = i;
 
+            //with this loop check all elements with existing one
             for(int j=i+1;j<n;j++){
                 if(array[j] < array[minIndex]){
                     minIndex = j;
