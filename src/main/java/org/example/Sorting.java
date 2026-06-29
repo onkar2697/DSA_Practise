@@ -35,4 +35,23 @@ public class Sorting {
         }
         return array;
     }
+
+    public int[] insertionSort(int[]array){
+        int n = array.length;
+
+        // starting from inder 1 to n-1 and we areinserting the value and checking it for every value from j=0-n
+        for(int i = 1; i < n; i++){
+            int current = array[i];
+            int j = i-1;
+
+            while(j>=0 && array[j] > current){
+                array[j+1] = array[j];
+                j--;
+            }
+            array[j+1] = current;
+        }
+        return array;
+    }
+
+
 }

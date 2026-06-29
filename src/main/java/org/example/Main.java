@@ -146,5 +146,8 @@ public class Main {
         int[] sortedArray1 = sort.bubbleSort(new int[]{15,25,10,12,9,30,18});
         System.out.println("sortedArray is :" + Arrays.toString(sortedArray));
 
+        int[] sortedArray2 = sort.insertionSort(new int[]{5,3,8,1,2,9});
+        System.out.println("sortedArray is :" + Arrays.toString(sortedArray2));
+
     }
 }
