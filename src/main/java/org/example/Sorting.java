@@ -45,6 +45,7 @@ public class Sorting {
             int j = i-1;
 
             while(j>=0 && array[j] > current){
+                // checks for every pair
                 array[j+1] = array[j];
                 j--;
             }
