@@ -72,7 +72,8 @@ public class Main {
        for(int i:addVal){
            System.out.print(i+" ");
        }
-
+       int cost = ap.costToRemoveElements(new int[]{1,5,3,6,4,7,9});
+       System.out.println("the cost to remove element is: " + cost);
 
        //String problems
        AllString al = new AllString();

@@ -92,4 +92,22 @@ public class ArraysProblems {
         }
         return arr;
     }
+
+    public int costToRemoveElements(int[] arr){
+        //pipe problem where cost of pipe have to calculated
+        int n =  arr.length;
+        //soft array
+        Arrays.sort(arr);
+        int sum =0;
+        int cost=0;
+        for(int i=0;i<n;i++){
+            sum+=arr[i];
+        }
+        for(int i=n-1;i>0;i--){
+            cost += sum-arr[i];
+            sum-=arr[i];
+        }
+        return cost;
+    }
+
 }
