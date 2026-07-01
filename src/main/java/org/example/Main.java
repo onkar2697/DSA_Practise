@@ -145,10 +145,17 @@ public class Main {
             System.out.print(num+" ");
         }
         int[] sortedArray1 = sort.bubbleSort(new int[]{15,25,10,12,9,30,18});
-        System.out.println("sortedArray is :" + Arrays.toString(sortedArray));
+        System.out.println("sortedArray is :" + Arrays.toString(sortedArray1));
 
         int[] sortedArray2 = sort.insertionSort(new int[]{5,3,8,1,2,9});
         System.out.println("sortedArray is :" + Arrays.toString(sortedArray2));
+
+        //Hasing
+
+        Hashing hash = new Hashing();
+        List<Integer> commonElemet = hash.findCommonElements(new int[]{10,12,15,14,16,18,12,20,20},new int[]{18,15,68,13,17,19,11,20,16});
+        System.out.println("common elements is : " + commonElemet.toString());
+
 
     }
 }
