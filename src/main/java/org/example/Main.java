@@ -156,6 +156,11 @@ public class Main {
         List<Integer> commonElemet = hash.findCommonElements(new int[]{10,12,15,14,16,18,12,20,20},new int[]{18,15,68,13,17,19,11,20,16});
         System.out.println("common elements is : " + commonElemet.toString());
 
+        int[] twoSum = hash.twoSum(new int[]{10,12,24,11,15},25);
+        System.out.println("the two sum index is " + Arrays.toString(twoSum));
+        for(int num:twoSum){
+            System.out.print(num+" ");
+        }
 
     }
 }

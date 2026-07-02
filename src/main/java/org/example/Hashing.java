@@ -27,5 +27,25 @@ public class Hashing {
         return res;
     }
 
+    public int[] twoSum(int[] arr1, int target){
+        int[] res=new int[2];
+        int n=arr1.length;
+
+        HashMap<Integer,Integer> map = new HashMap<>();
+
+        for(int i=0;i<n;i++){
+            map.put(arr1[i],i);
+        }
+
+        for(int i=0;i<n;i++){
+            if(map.containsKey(target-arr1[i])){
+                res[0] = map.get(target-arr1[i]); //print the index of the numbers
+                res[1] = i;
+            }
+        }
+
+        return res;
+    }
+
 
 }
