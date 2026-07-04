@@ -150,6 +150,9 @@ public class Main {
         int[] sortedArray2 = sort.insertionSort(new int[]{5,3,8,1,2,9});
         System.out.println("sortedArray is :" + Arrays.toString(sortedArray2));
 
+        int longestConsegetiveSequence = sort.longestConsegetiveSequence(new int[]{0,3,7,2,5,8,4,6,0,1});
+        System.out.println("longest Consegetive Sequence is : " + longestConsegetiveSequence);
+
         //Hasing
 
         Hashing hash = new Hashing();

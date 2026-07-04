@@ -1,5 +1,7 @@
 package org.example;
 
+import java.util.Arrays;
+
 public class Sorting {
     public int[] selectionSort(int[]array){
         int n =  array.length;
@@ -54,5 +56,20 @@ public class Sorting {
         return array;
     }
 
-
+    public int longestConsegetiveSequence(int[]  arr){ //Leetcode problem we can use hashing too
+        int n = arr.length;
+        int cnt=0;
+        int max =0;
+        Arrays.sort(arr); // sort array using any method
+        for(int i=0;i<n-1;i++){
+            if(arr[i+1] - arr[i] == 1){
+                cnt++;
+                max = Math.max(cnt,max);
+            }
+            else{
+                cnt = 0;
+            }
+        }
+        return max+1;
+    }
 }
