@@ -162,5 +162,11 @@ public class Main {
         int[] twoSum = hash.twoSum(new int[]{10,12,24,11,15},25);
         System.out.println("the two sum index is " + Arrays.toString(twoSum));
 
+        int romToInt = hash.romanToInt("LVIII");
+        System.out.println("romanToInt is : " + romToInt);
+
+        String intToRoman = hash.intToRoman(58);
+        System.out.println("intToRoman is : " + intToRoman);
+
     }
 }
