@@ -110,4 +110,21 @@ public class ArraysProblems {
         return cost;
     }
 
+    public int removeDublicates(int[] arr){
+        int n = arr.length;
+        int ans =0;
+        Arrays.sort(arr);  // Array is sorted - Leetcode problm
+
+        if(n==0) return 0;
+
+        for(int i=0;i<n-1;i++){
+            if(arr[i] != arr[i+1]){
+                ans++;
+               // arr[ans]=arr[i];   // in leetcode problem using this to print the number at ith position
+            }
+
+        }
+        return ans+1;
+    }
+
 }

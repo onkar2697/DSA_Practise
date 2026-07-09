@@ -75,6 +75,9 @@ public class Main {
        int cost = ap.costToRemoveElements(new int[]{1,5,3,6,4,7,9});
        System.out.println("the cost to remove element is: " + cost);
 
+       int removeDub = ap.removeDublicates(new int[]{0,0,1,1,1,2,2,3,3,4});
+       System.out.println("the removedub is: " + removeDub);
+
        //String problems
        AllString al = new AllString();
        al.reverse("abcdefg");
