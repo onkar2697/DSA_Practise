@@ -171,5 +171,8 @@ public class Main {
         String intToRoman = hash.intToRoman(58);
         System.out.println("intToRoman is : " + intToRoman);
 
+        int majorityElement = hash.mejorityElement(new int[]{2,2,1,1,1,2,2});
+        System.out.println("majorityElement is : " + majorityElement);
+
     }
 }

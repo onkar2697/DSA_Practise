@@ -106,4 +106,22 @@ public class Hashing {
         }
         return sb.toString();
     }
+
+    public int mejorityElement(int[] arr){
+        int n =  arr.length;
+        HashMap<Integer,Integer> map=new HashMap<>();
+
+        for(int num:arr){
+            map.put(num,map.getOrDefault(num,0)+1);
+        }
+
+        int res=0;
+        for(int val : map.keySet()){
+            if(map.get(val) > n/2){
+                res = val;
+                break;
+            }
+        }
+        return res;
+    }
 }
