@@ -127,4 +127,18 @@ public class ArraysProblems {
         return ans+1;
     }
 
+    public int[] productOfArrayExceptSelf(int[] arr){
+        int n = arr.length;
+        int[] ans = new int[n];
+        int product = 1;
+
+        for(int i=0;i<n;i++){
+            product *= arr[i];
+        }
+        for(int i=0;i<n;i++){
+            ans[i] = product/arr[i];
+        }
+        return ans;
+    }
+
 }
