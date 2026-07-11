@@ -127,6 +127,27 @@ public class ArraysProblems {
         return ans+1;
     }
 
+    public int removeDubTwoRep(int[] arr){  // Leetcode problem
+
+        int n = arr.length;
+        int j =1;
+        int dub = 1;
+
+        for(int i=1;i<n;i++){
+            if(arr[i] == arr[i-1]){
+                dub++;
+            }
+            else{
+                dub =1;
+            }
+            if(dub <=2){
+                arr[j] = arr[i];  // 2 dublicated are allowed
+                j++;
+            }
+        }
+        return j;
+    }
+
     public int[] productOfArrayExceptSelf(int[] arr){
         int n = arr.length;
         int[] ans = new int[n];

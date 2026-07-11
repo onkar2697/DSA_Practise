@@ -78,6 +78,9 @@ public class Main {
        int removeDub = ap.removeDublicates(new int[]{0,0,1,1,1,2,2,3,3,4});
        System.out.println("the removedub is: " + removeDub);
 
+        int removeDub1 = ap.removeDubTwoRep(new int[]{0,0,1,1,1,1,2,3,3});
+       System.out.println("the removedub is: " + removeDub1);
+
        int[] productArray = ap.productOfArrayExceptSelf(new int[]{1,2,3,4});
        System.out.println("the product Array is: " + Arrays.toString(productArray));
 
