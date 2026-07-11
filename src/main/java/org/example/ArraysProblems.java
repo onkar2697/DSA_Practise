@@ -162,13 +162,29 @@ public class ArraysProblems {
         return ans;
     }
 
-    public int bestTimeToBuyStock(int[] arr){
+    public int totalProfit(int[] arr){
         int n = arr.length;
         int profit =0;
 
         for(int i=1;i<n;i++){
             if(arr[i] > arr[i-1]){
                 profit += arr[i]-arr[i-1];
+            }
+        }
+        return profit;
+    }
+
+    public int bestTimeToBuyStock(int[] arr){
+        int profit =0;
+        int n = arr.length;
+        int min = Integer.MAX_VALUE;
+
+        for(int i=0;i<n;i++){
+            if(arr[i] < min){
+                min = arr[i];
+            }
+            if(arr[i] - min >profit ){
+                profit = arr[i] - min;
             }
         }
         return profit;
