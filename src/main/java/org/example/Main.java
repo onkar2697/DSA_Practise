@@ -84,6 +84,9 @@ public class Main {
        int[] productArray = ap.productOfArrayExceptSelf(new int[]{1,2,3,4});
        System.out.println("the product Array is: " + Arrays.toString(productArray));
 
+       int profit = ap.bestTimeToBuyStock(new int[]{7,1,5,3,6,4});
+       System.out.println("total profit: " + profit);
+
 
        //String problems
        AllString al = new AllString();
