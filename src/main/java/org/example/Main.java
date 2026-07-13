@@ -187,5 +187,8 @@ public class Main {
         int majorityElement = hash.mejorityElement(new int[]{2,2,1,1,1,2,2});
         System.out.println("majorityElement is : " + majorityElement);
 
+        boolean ransonConstruct = hash.ransonNote("aa","aab");
+        System.out.println("ranson note can be Constructed : " + ransonConstruct);
+
     }
 }
