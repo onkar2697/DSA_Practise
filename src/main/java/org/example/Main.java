@@ -190,5 +190,8 @@ public class Main {
         boolean ransonConstruct = hash.ransonNote("aa","aab");
         System.out.println("ranson note can be Constructed : " + ransonConstruct);
 
+        boolean validAnagram = hash.validAnagram("anagram","nagaram");
+        System.out.println("It is a anagram : "+validAnagram);
+
     }
 }
