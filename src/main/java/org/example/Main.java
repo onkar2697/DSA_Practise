@@ -193,5 +193,10 @@ public class Main {
         boolean validAnagram = hash.validAnagram("anagram","nagaram");
         System.out.println("It is a anagram : "+validAnagram);
 
+        BitManipulation bit = new BitManipulation();
+
+        int numberof1Bit = bit.numberOf1Bits(11);
+        System.out.println("numberof1Bit is : " + numberof1Bit);
+
     }
 }
