@@ -90,6 +90,9 @@ public class Main {
        int bestTimetoBuyStock = ap.bestTimeToBuyStock(new int[]{7,1,5,3,6,4});
        System.out.println("profit by selling stock : "+bestTimetoBuyStock);
 
+       boolean jumpgame = ap.jumpGame(new int[]{2,3,1,1,4});
+       System.out.println("jump game? "+jumpgame);
+
 
        //String problems
        AllString al = new AllString();

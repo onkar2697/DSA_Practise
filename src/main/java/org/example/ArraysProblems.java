@@ -190,4 +190,20 @@ public class ArraysProblems {
         return profit;
     }
 
+    public boolean jumpGame(int[]  nums){  //Leetcode 150
+        int n = nums.length;
+        int jump = nums[0];
+
+        for(int i=1;i<n;i++){
+
+            if(jump == 0){
+                return false;
+            }
+
+            jump--;
+            jump = Math.max(jump,nums[i]);
+        }
+        return true;
+    }
+
 }
