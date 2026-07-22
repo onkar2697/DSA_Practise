@@ -93,6 +93,9 @@ public class Main {
        boolean jumpgame = ap.jumpGame(new int[]{2,3,1,1,4});
        System.out.println("jump game? "+jumpgame);
 
+       int[] twoSum2 = ap.twoSumII(new int[]{2,7,11,15},9);
+       System.out.println("two sum is: " + Arrays.toString(twoSum2));
+
 
        //String problems
        AllString al = new AllString();

@@ -206,4 +206,33 @@ public class ArraysProblems {
         return true;
     }
 
+    public int[] twoSumII(int[] nums, int target) {  //Array input is sorted
+        int n = nums.length;
+        Arrays.sort(nums);
+        int ans[] = new int[2];
+
+        int i=0;
+        int j=n-1;
+
+        while(i<j){
+            int sum = nums[i]+nums[j];
+            if(sum ==target){
+                ans[0]=i+1;
+                ans[1]=j+1;
+                break;
+            }
+            else if(sum < target){
+                i++;
+            }
+            else{
+                j--;
+            }
+            if(i==j){
+                ans[0]=-1;
+                ans[1]=-1;
+            }
+        }
+        return ans;
+    }
+
 }
