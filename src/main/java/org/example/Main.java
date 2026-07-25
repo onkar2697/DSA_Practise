@@ -204,5 +204,10 @@ public class Main {
         int numberof1Bit = bit.numberOf1Bits(11);
         System.out.println("numberof1Bit is : " + numberof1Bit);
 
+
+        StackProblems stackpb = new StackProblems();
+        boolean validparanthasis = stackpb.validParanthasis("()[]{}");
+        System.out.println("validParanthasis is : " + validparanthasis);
+
     }
 }
