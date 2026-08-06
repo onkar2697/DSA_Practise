@@ -1,6 +1,8 @@
 package org.example;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class ArraysProblems {
     public int[] prefixSum(int[] arr){
@@ -233,6 +235,51 @@ public class ArraysProblems {
             }
         }
         return ans;
+    }
+
+    public List<Integer> spiralOrder(int[][] matrix) {//Spiral matrix
+        int m = matrix.length;
+        int n = matrix[0].length;
+        ArrayList<Integer> al = new ArrayList<Integer>();
+        int r = 0, c= 0;
+        while(m > 1 && n>1){
+            for(int i = 1; i < n; i++){
+                al.add(matrix[r][c]);
+                c++;
+            }
+            for(int i = 1; i < m; i++){
+                al.add(matrix[r][c]);
+                r++;
+            }
+            for(int i = 1; i < n; i++){
+                al.add(matrix[r][c]);
+                c--;
+            }
+            for(int i = 1; i < m; i++){
+                al.add(matrix[r][c]);
+                r--;
+            }
+            r += 1;
+            c += 1;
+            m -= 2;
+            n -= 2;
+        }
+
+        if(m == 1){
+            for (int i = 0; i < n; i++) {
+                al.add(matrix[r][c]);
+                c++;
+            }
+            // al.add(matrix[r][c]);
+            // c++;
+        }
+        else if (n == 1) {
+            for (int i = 0; i < m; i++) {
+                al.add(matrix[r][c]);
+                r++;
+            }
+        }
+        return al;
     }
 
 }

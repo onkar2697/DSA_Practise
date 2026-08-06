@@ -96,6 +96,9 @@ public class Main {
        int[] twoSum2 = ap.twoSumII(new int[]{2,7,11,15},9);
        System.out.println("two sum is: " + Arrays.toString(twoSum2));
 
+       List<Integer> spiralmat = ap.spiralOrder(new int[][]{{1,2,3},{4,5,6},{7,8,9}});
+       System.out.println("spiral mat is: " + spiralmat);
+
 
        //String problems
        AllString al = new AllString();
