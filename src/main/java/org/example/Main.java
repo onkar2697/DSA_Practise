@@ -22,6 +22,10 @@ public class Main {
         int oddsum = number.oddSum(27);
         System.out.println("sum of odd numbers: "+oddsum);
 
+        int climbingStairs = number.climbingStaris(3);
+        System.out.println("climbing stairs: "+climbingStairs);
+
+
         //Star pattern
         StarPattern st = new StarPattern();
         st.starLeftIncrease(4);
